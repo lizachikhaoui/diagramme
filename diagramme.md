@@ -1,12 +1,3 @@
-# Diagramme de flux – Voyage spirituel
-
-```mermaid
-flowchart TD
-    A[Page chargée] --> B[Script JS lancé]
-    B --> C[Utilisateur clique sur une émotion]
-    C --> D[playEmotion()]
-    D --> E[Texte + animations]
-
 # Diagramme de flux – Projet Voyage spirituel
 
 Ce diagramme représente le fonctionnement de l’application web interactive.
