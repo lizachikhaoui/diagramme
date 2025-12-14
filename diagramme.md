@@ -1,27 +1,27 @@
 ```mermaid
 flowchart TD
-    A[Chargement de la page HTML] --> B[Chargement du DOM et du CSS]
-    B --> C[Initialisation du JavaScript]
+    A[Page chargee] --> B[DOM et CSS charges]
+    B --> C[Script JavaScript initialise]
 
-    C --> D[Création de l'objet Audio]
-    D --> E[Initialisation des données\nchant, colors, timeoutList]
+    C --> D[Objet audio cree]
+    D --> E[Donnees initialisees]
 
-    E --> F[Affichage du texte par défaut]
+    E --> F[Texte par defaut affiche]
 
     F --> G{Action utilisateur}
 
-    G -->|Clic sur une émotion| H[playEmotion(type)]
-    H --> I[resetEmotion()]
-    I --> J[Changement du fond]
-    J --> K[Affichage progressif du texte]
-    K --> L[Création des particules]
-    L --> M[Création des ondes lumineuses]
+    G -->|Emotion| H[Lancer emotion]
+    H --> I[Reinitialiser etat]
+    I --> J[Changer fond]
+    J --> K[Afficher texte]
+    K --> L[Creer particules]
+    L --> M[Creer ondes]
     M --> F
 
-    G -->|Réinitialiser| N[resetEmotion()]
-    G -->|Pause musique| O[pauseMusic()]
-    G -->|Reprendre musique| P[resumeMusic()]
-    G -->|Stop musique| Q[stopMusic()]
+    G -->|Reset| N[Reinitialiser]
+    G -->|Pause| O[Pause musique]
+    G -->|Play| P[Reprendre musique]
+    G -->|Stop| Q[Stop musique]
 
-    C --> R[Mouvement souris détecté]
-    R --> S[Création des traînées lumineuses]
+    C --> R[Mouvement souris]
+    R --> S[Trails lumineux]
