@@ -1,7 +1,3 @@
-# Diagramme de flux – Projet Voyage spirituel
-
-Ce diagramme représente le fonctionnement de l’application web interactive.
-
 ```mermaid
 flowchart TD
     A[Chargement de la page HTML] --> B[Chargement du DOM et du CSS]
